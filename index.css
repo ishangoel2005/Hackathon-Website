@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
+    background-color: black;
 }
 .website-container{
     background-color: black;
@@ -13,7 +13,6 @@ body {
 .menu {
     position: relative;
 }
-
 .menu-button {
     background-color: black;
     color: white;
@@ -22,11 +21,9 @@ body {
     display: inline-block;
     margin-left: 600px;
 }
-
 .menu-button:hover {
     background-color: darkblue;
 }
-
 .dropdown {
     position: fixed;
     top: 0;
@@ -44,27 +41,22 @@ body {
     transform: translateY(-100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
-
 .dropdown.show {
     opacity: 1;
     transform: translateY(0);
 }
-
 .dropdown ul {
     list-style-type: none;
 }
-
 .dropdown ul li {
     margin: 20px 0;
     font-size: 2em;
     color: white;
     cursor: pointer;
 }
-
 .dropdown ul li:hover {
     color: #ccc;
 }
-
 .close {
     position: absolute;
     top: 20px;
@@ -73,7 +65,23 @@ body {
     color: white;
     cursor: pointer;
 }
-
 .close:hover {
     color: #ccc;
+}
+.get_in_touch_bar {
+    width: 200px;
+    height: 60px;
+    background-color: #0d0d0d;
+    color: white;
+    border: 2px solid #6a0dad;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1050px;
+}
+.get_in_touch_bar:hover {
+    background-color: #3c3c3c;
 }
