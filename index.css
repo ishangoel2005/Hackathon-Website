@@ -5,14 +5,17 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: white;
+    background-image: image("background_codeclash.jpg");
+    
 }
 .website-container{
     background-color: black;
 }
 .menu {
     position: relative;
-}
+} 
+
 .menu-button {
     background-color: black;
     color: white;
@@ -316,3 +319,33 @@ button:hover {
     margin-top: 10px;
     font-size: 1.2em;
 }
+
+.FAQ-box:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin:auto;
+    background-color:rgb(251, 255, 255);
+    border-radius: 10px;
+    margin-top: 130px;
+}
+.FAQ-text {
+    flex: 1;
+    margin-right: 20px;
+    color: rgb(13, 86, 232);
+}
+.FAQ-text h3{
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+.FAQ-text p{
+    font-size: 2em;
+    line-height: 1.5;
+    color: white;
+}
+
