@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeClash'24</title>
     <link rel="stylesheet" href="./index.css">
-    <div class="background image-content"></div>
-    <div img src="C:\Users\shres\Desktop\VSCODE\Hackathon-Website\Pictures\background_codeclash.jpg"></div>
+    
 </head>
 <body>
+    <div class="background-gradient"></div>
     <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
     <div class="website-container">
     <div class="menu">
         <div class="menu-button">CodeClash'24</div>
-        <div class="dropdown">
-            <div class="close">×</div>
-            <ul>
-                <li>Home</li>
-                <li>Themes</li>
-                <li>Prizes</li>
-                <li>Tracks</li>
-                <li>FAQ</li>
-            </ul>
-        </div>
+    <div class="dropdown">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Prizes</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div>
     </div>
     </div>
     <div class="get_in_touch_bar">Get In Touch</div>
@@ -30,10 +29,10 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="name">Name:Arsh Verma</label>
+            <form id="contactForm"></form> 
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:arshvermaimm@gmail.com</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" required></textarea><br><br>
@@ -43,7 +42,7 @@
     </div>
     <div class="container">
         <div class="text-content">
-            <h1>WHERE CODERS CLASH AND CHAMPIONS ARISE</h1>
+            <h2>WHERE CODERS CLASH AND CHAMPIONS ARISE</h2>
             <h2>24 Hrs Online Hackathon</h2>
             <button class="apply-button">Apply with Devfolio</button>
         </div>
@@ -106,25 +105,39 @@
             </div>
         </div>
     </div>
-    <div class="FAQ">
-        <h2>FAQ</h2>
-        <div class="FAQ - text ">
-            <h3>What is a Code Clash?</h3>
-            <p>CodeClash is a hackathon where developers from diverse backgrounds all over India collaborate to create innovate software or hardware solutions within a limited timeframe.</p>
-            <h3>Who can attend CodeClash?</h3>
-            <p>Everyone is welcome to join the CodeClash family ! Whether you're a student from any course or collage , we're thrilled to have you on board.</p>
-            <h3>I am a first-time participant , what should I do ?</h3>
-            <p>Welcome aboard, newbie! Don't fret, we're all about supporting our first-timers.Dive into our exciting workshops and events designed to kickstart your hackathon journey with a bang!</p>
-            <h3>How does team formation work for CodeClash ?</h3>
-            <p>Teameork makes the dream work at CodeClash! Gather your squad of up to four members, or if your're flying solo fear not!We'll haelp you connect with like-minded hackers to form the ultimate dream team.</p>
-            <h3>Is there a registration fee for CodeClash ?</h3>
-            <p>Nope,zero,nil! CodeClash is all about breaking barriers, and that includes registration fees.  It's all about passionate participants! </p>
-            <h3>Will there be swags ?</h3>
-            <p>You betcha ! Get ready to snag some cool CodeClash swag as you dive into the hackathon frenzy. Who knows? You might just walk away with some awesome goodies !</p>
-
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3>Q: What is CodeClash?</h3>
+            <p>A: CodeClash is a coding challenge platform where developers can showcase their skills and compete with others.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Q: How do I participate in a challenge?</h3>
+            <p>A: To participate in a challenge, simply click on the challenge you're interested in and follow the instructions provided.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Q: Who can attend CodeClash? </h3>
+            <p>A: Everyone is welcome to join the CodeClash family ! Whether you're a student from any course or collage , we're thrilled to have you on board.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Q: I am a first-time participant , what should I do ?</h3>
+            <p>A: Welcome aboard, newbie! Don't fret, we're all about supporting our first-timers.Dive into our exciting workshops and events designed to kickstart your hackathon journey with a bang!</p>
+          </div>
+          <div class="faq-item">
+            <h3>Q: How does team formation work for CodeClash ?</h3>
+            <p>A: Teameork makes the dream work at CodeClash! Gather your squad of up to four members, or if your're flying solo fear not!We'll haelp you connect with like-minded hackers to form the ultimate dream team.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Q: Is there a registration fee for CodeClash ?</h3>
+            <p>A: Nope,zero,nil! CodeClash is all about breaking barriers, and that includes registration fees. It's all about passionate participants!</p>
+          </div>
+          <div class="faq-item">
+            <h3>Q: Will there be swags ?</h3>
+            <p>A: You betcha ! Get ready to snag some cool CodeClash swag as you dive into the hackathon frenzy. Who knows? You might just walk away with some awesome goodies !</p>
+          </div>
         </div>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </section>
     <script src="./app.js"></script>
 </body>
 </html>
