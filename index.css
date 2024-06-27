@@ -19,15 +19,10 @@ body {
     background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
     background-size: cover;
     background-position: center;
-}
-/* .website-container{
-    background-color: black;
-} */
-.menu {
+}.menu {
     position: relative;
 }
 .menu-button {
-    /* background-color: black; */
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -36,9 +31,6 @@ body {
     font-size: 25px;
     color: black;
 }
-/* .menu-button:hover {
-    background-color: darkblue;
-} */
 .dropdown {
     position: fixed;
     top: 0;
@@ -154,16 +146,6 @@ button {
 button:hover {
     background-color: #45a049;
 }
-/* .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    width: 80%;
-    max-width: 1200px;
-} */
 .header-text {
     font-size: 36px;
     font-weight: bold;
@@ -171,14 +153,6 @@ button:hover {
     text-align: center;
     margin-bottom: 20px;
   }
-/* .text-content {
-    flex: 1;
-    text-align: center; 
-}
-.text-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px; 
-} */
 .head1 {
     font-size: 24px;
     margin-top: 120px;
