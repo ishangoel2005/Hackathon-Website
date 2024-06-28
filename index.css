@@ -246,18 +246,23 @@ button:hover {
     width: 80%;
     max-width: 1200px;
     margin: 50px auto;
-    background-color: #2c2c2c;
     border-radius: 10px;
     margin-top: 130px;
+    position: relative;
 }
 .hackathon-text {
     flex: 1;
     margin-right: 20px;
     color: white;
+    margin-top: 100px;
 }
 .hackathon-text h2 {
+    position: absolute;
     font-size: 2.5em;
     margin-bottom: 10px;
+    top: 5px;
+    margin-left: 300px;
+    color: yellow;
 }
 .hackathon-text p {
     font-size: 1.2em;
@@ -272,7 +277,30 @@ button:hover {
 .hackathon-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-top: 90px;
+    border: 2px solid orangered; 
+}
+@keyframes move-amoeba {
+    0%, 100% {
+        transform: translate(0, 0); 
+    }
+    25% {
+        transform: translate(20px, 20px); 
+    }
+    50% {
+        transform: translate(-20px, -20px); 
+    }
+    75% {
+        transform: translate(20px, -20px); 
+    }
+}
+.animated-border {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 10%; 
+    padding: 20px; 
+    animation: move-amoeba 7s ease-in-out infinite;
 }
 .sponsors-section {
     width: 80%;
@@ -302,15 +330,19 @@ button:hover {
     margin: 10px;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease;
 }
 .sponsor img {
     display: block;
-    margin: 0 auto;
     transition: transform 0.3s ease;
-    border-radius: 10px;
     border-style:solid;
     border-color: black;
     border-width: 3.5px;
+    width: 120px;
+    height: 100px;
+    margin: 0 auto 10px;
+    border-radius: 50% / 30%;
+    border: 2px solid #00FFFF;
 }
 .sponsor1 img {
     height: 150px;
@@ -327,6 +359,9 @@ button:hover {
     width: 150px;
     margin-top: 75px;
 }
+.sponsor:hover {
+    transform: scale(1.05);
+}
 .domains-section {
     width: 80%;
     max-width: 1200px;
@@ -335,15 +370,16 @@ button:hover {
     color: white;
     margin-top: 100px;
 }
-.domains-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
 .domains-row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 20px;
+}
+.domains-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FFD700;
 }
 .domain-box {
     flex: 1 1 30%;
@@ -352,27 +388,26 @@ button:hover {
     box-sizing: border-box;
     text-align: center;
     margin: 10px;
-    background-color: #333;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    position: relative;
 }
 .domain-box:hover {
     transform: scale(1.05);
 }
 .domain-box img {
-    width: 120px;
-    height: 100px;
+    width: 140px;
+    height: 110px;
     display: block;
     margin: 0 auto 10px;
-}
-.domain-box p {
-    margin-top: 10px;
-    font-size: 1.2em;
+    border-radius: 30% 70% 65% 35% / 30% 33% 67% 70%;
+    border: 2px solid #39FF14;
 }
 .faq-section {
     padding: 40px;
     background-color: transparent; 
     border-bottom: none; 
+    margin-top: 150px;
   }
   .faq-container {
     display: flex;
@@ -388,7 +423,6 @@ button:hover {
     width: calc(50% - 40px);
     background-color: #0b0b0b; 
     border-radius: 10px;
- 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
     background-color: transparent;
@@ -427,5 +461,10 @@ button:hover {
     color: #fff;
   }
   .faq-section h2 {
-    color: #fff;
+    position: absolute;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    top: 2250px;
+    margin-left: 350px;
+    color: yellow;
   }
