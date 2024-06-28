@@ -9,6 +9,19 @@ body {
     color: darkblue;
     overflow-x: hidden;
 }
+.equal-sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px; 
+    margin-top: 20px;
+}
+.line {
+    width: 24px; 
+    height: 3px; 
+    background-color: black; 
+}
 .background-gradient {
     position: fixed;
     top: 0;
@@ -19,17 +32,44 @@ body {
     background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
     background-size: cover;
     background-position: center;
-}.menu {
-    position: relative;
+}
+.main{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    background: linear-gradient(90deg, #FFD700 70%, #00FFFF 30%);
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: animate 10s linear infinite;
+    margin-top: 130px;
+    margin-left: 130px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 7s ,
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
 }
 .menu-button {
-    color: white;
-    padding: 10px;
     cursor: pointer;
     display: inline-block;
-    margin-left: 570px;
-    font-size: 25px;
-    color: black;
+    margin-left: 625px;
+    margin-top: .1px;
 }
 .dropdown {
     position: fixed;
@@ -132,7 +172,8 @@ form {
     flex-direction: column;
 }
 label, input, textarea {
-    margin: 10px 0;
+    margin: 7px 0;
+    margin-top: 5px;
 }
 button {
     background-color: #4CAF50;
@@ -142,6 +183,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 5px;
 }
 button:hover {
     background-color: #45a049;
@@ -152,10 +194,10 @@ button:hover {
     color: #fff; 
     text-align: center;
     margin-bottom: 20px;
-  }
+}
 .head1 {
     font-size: 24px;
-    margin-top: 120px;
+    margin-top: 170px;
     color: white;
     margin-left: 15px;
 }
@@ -243,6 +285,7 @@ button:hover {
 .sponsors-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: yellow;
 }
 .sponsors-row {
     display: flex;
@@ -257,26 +300,31 @@ button:hover {
     box-sizing: border-box;
     text-align: center;
     margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.sponsor img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: black;
+    border-width: 3.5px;
 }
 .sponsor1 img {
     height: 150px;
     width: 170px;
-    display: block;
-    margin: 0 auto 10px;
     margin-top: 50px;
 }
 .sponsor2 img {
     height: 150px;
     width: 170px;
-    display: block;
-    margin: 0 auto 10px;
     margin-top: 50px;
 }
 .sponsor3 img {
     height: 100px;
     width: 150px;
-    display: block;
-    margin: 0 auto 10px;
     margin-top: 75px;
 }
 .domains-section {
