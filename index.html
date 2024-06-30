@@ -11,25 +11,37 @@
     <div class="background-gradient"></div>
     <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
     <div class="website-container">
-    <div class="menu">
-        <div class="menu-button">CodeClash'24</div>
-    <div class="dropdown">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Prizes</a></li>
-            <li><a href="#">Tracks</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-    </div>
-    </div>
+        <div class="main">
+            <p><i>CodeClash'24</i></p>
+        </div>
+        <div class="menu">
+            <div class="menu-button">
+                <div class="equal-sign">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="close">×</div>
+                <ul>
+                    <li>Home</li>
+                    <li>About the Hackathon</li>
+                    <li>Our Sponsors</li>
+                    <li>Our Teams</li>
+                    <li>Our Domains</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
     <div class="get_in_touch_bar">Get In Touch</div>
     <div id="contactModal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h2>Contact Us</h2>
-            <form id="contactForm"></form> 
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                <input type="hidden" name="access_key" value="d48056d9-0ee8-4e92-bd10-23602e8597d9">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
                 <label for="email">Email:</label>
@@ -40,40 +52,60 @@
             </form>
         </div>
     </div>
-    <div class="container">
         <div class="text-content">
-            <h2>WHERE CODERS CLASH AND CHAMPIONS ARISE</h2>
-            <h2>24 Hrs Online Hackathon</h2>
+            <h2 class="head1">WHERE CODERS CLASH AND CHAMPIONS ARISE</h2>
+            <h2 class="head2">24 Hrs Online Hackathon</h2>
             <button class="apply-button">Apply with Devfolio</button>
         </div>
         <div class="image-content">
-            <img src="./Pictures/Hackathon-Logo.jpg" alt="CodeClash Logo">
+            <img src="./Pictures/Hackathon Logo.png" alt="CodeClash Logo">
         </div>
-    </div>
 
     <div class="hackathon-info">
         <div class="hackathon-text">
             <h2>About the Hackathon</h2>
-            <p>CodeClash'24 is an exciting event where coders come together to compete, collaborate, and create. Join us for an unforgettable experience filled with challenges, innovation, and opportunities to showcase your skills on 29-30th July 2024. It's a platform where innovative minds come together to solve real-world problems, engage in exciting challenges, and collaborate with peers from diverse backgrounds. Our mission is to foster creativity, teamwork, and technical excellence among participants.</p>
+            <p class="animated-border">CodeClash'24 is an exciting event where coders come together to compete, collaborate, and create. Join us for an unforgettable experience filled with challenges, innovation, and opportunities to showcase your skills on 29-30th July 2024. It's a platform where innovative minds come together to solve real-world problems, engage in exciting challenges, and collaborate with peers from diverse backgrounds. Our mission is to foster creativity, teamwork, and technical excellence among participants.</p>
         </div>
         <div class="hackathon-image">
             <img src="./Pictures/About photo.jpg" alt="Hackathon Image">
         </div>
     </div>
     <div class="sponsors-section">
-        <h2>Our Sponsors</h2>
+        <h2>Our Sponsors</h2>c
         <div class="sponsors-row">
-            <div class="sponsor1">
-                <img src="./Pictures/Devfolio.jpg" alt="">
+            <div class="sponsor sponsor1">
+                <img src="./Pictures/Devfolio.jpg" alt="Devfolio">
             </div>
-            <div class="sponsor2">
-                <img src="./Pictures/EthIndia.jpg" alt="">
+            <div class="sponsor sponsor2">
+                <img src="./Pictures/EthIndia.jpg" alt="ETHIndia">
             </div>
-            <div class="sponsor3">
-                <img src="./Pictures/Polygon.jpg" alt="">
+            <div class="sponsor sponsor3">
+                <img src="./Pictures/Polygon.jpg" alt="Polygon">
             </div>
         </div>
     </div>
+
+    <div class="teams-section">
+        <h2>Our Teams</h2>
+        <div class="teams-row">
+          <div class="team-box">
+            <img src="./Pictures/Team1.jpg" alt="Team 1">
+            <h3>Team 1</h3>
+            <p>ACM SIGKDD TEAM 1</p>
+          </div>
+          <div class="team-box">
+            <img src="./Pictures/Team2.jpg" alt="Team 2">
+            <h3>Team 2</h3>
+            <p>ACM SIGKDD TEAM 2</p>
+          </div>
+          <div class="team-box">
+            <img src="./Pictures/Team3.jpg" alt="Team 3">
+            <h3>Team 3</h3>
+            <p>ACM SIGKDD TEAM 3</p>
+          </div>
+        </div>
+      </div>
+
     <div class="domains-section">
         <h2>Our Domains</h2>
         <div class="domains-row">
